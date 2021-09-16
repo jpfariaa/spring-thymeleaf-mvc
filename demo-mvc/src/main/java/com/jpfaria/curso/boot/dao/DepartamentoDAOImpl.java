@@ -4,6 +4,6 @@ import com.jpfaria.curso.boot.domain.DepartamentoEntity;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class DepartamentoDAOImpl extends AbstractDao<DepartamentoEntity, Long> implements DepartamentoDAO {
+public class DepartamentoDAOImpl extends AbstractDAO<DepartamentoEntity, Long> implements DepartamentoDAO {
 
 }

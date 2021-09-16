@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 
 
 @Repository
-public class FuncionarioDAOImpl extends AbstractDao<FuncionarioEntity, Long> implements FuncionarioDAO {
+public class FuncionarioDAOImpl extends AbstractDAO<FuncionarioEntity, Long> implements FuncionarioDAO {
 
 }
