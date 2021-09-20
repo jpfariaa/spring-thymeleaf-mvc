@@ -44,6 +44,19 @@ public class CargoController {
 		return "redirect:/cargos/cadastrar";
 	}
 
+	@GetMapping("/editar/{id}")
+	public String preEditar(@PathVariable("id") Long id, ModelMap model) {
+		model.addAttribute("cargo", cargoService.buscarPorId(id));
+		return "/cargo/cadastro";
+	}
+
+	@PostMapping("/editar")
+	public String editar(Cargo cargo, RedirectAttributes attr) {
+		cargoService.editar(cargo);
+		attr.addFlashAttribute("success", "Registro atualizado com sucesso.");
+		return "redirect:/cargos/cadastrar";
+	}
+
 	/**
 	 * para combobox de departamentos no cadastro de cargo
 	 */
