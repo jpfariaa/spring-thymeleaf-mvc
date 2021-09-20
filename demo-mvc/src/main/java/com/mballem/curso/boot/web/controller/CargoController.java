@@ -68,6 +68,9 @@ public class CargoController {
         return "redirect:/cargos/listar";
     }
 
+    /**
+     * lista departamentos para serem inseridos no combobox de inserção de cargo
+     */
     @ModelAttribute("departamentos")
     public List<Departamento> listaDeDepartamentos() {
         return departamentoService.buscarTodos();
