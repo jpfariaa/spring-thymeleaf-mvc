@@ -47,11 +47,11 @@
 	<script	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
 	<script type="text/javascript">
-
-		let url = '';
-
+	
+		var url = '';
+		
 		$('button[id*="btn_"]').click(function() {
-			url = "/" + $(this).attr('id').split("_")[1];
+			url = "http://localhost:8080/" + $(this).attr('id').split("_")[1];
 		});
 		
 		$('#ok_confirm').click(function() {
